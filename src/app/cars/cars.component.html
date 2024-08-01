@@ -1,0 +1,32 @@
+<div class="cars py-5">
+    <div class="popular text-center">
+        POPULAR RENTAL DEALS
+    </div>
+    <h1 class="text-center my-5">Most popular cars rental deals</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" *ngFor="let car of allCars">
+                <div class="card pt-5 pb-3 mb-4">
+                    <img src="../../assets/img/cardImg.png" class="card-img-top" [alt]="car.model">
+                    <div class="card-body">
+                      <h5 class="card-title">{{car.model}}</h5>
+                      <p><i class="fa-solid fa-star"></i> <span class="fw-bold ms-3">4.6</span> (1,989 reviews)</p>
+                      <div class="d-flex flex-wrap  justify-content-between my-3" style="color: #777;">
+                          <div><i class="fa-solid fa-user"></i> 4 Passengers</div>
+                          <div><i class="fa-solid fa-car"></i> auto</div>
+                          <div><i class="fa-solid fa-temperature-arrow-down"></i> Air Conditioning</div>
+                          <div><i class="fa-solid fa-door-open"></i> 4 doors</div>
+    
+                      </div>
+                      <hr>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p>Price</p>
+                        <p class="fw-bold">$ {{car.price}} <span style="color: #777;">/day</span></p>
+                      </div>
+                      <a href="#" class="btn text-capitalize w-100">rent now</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

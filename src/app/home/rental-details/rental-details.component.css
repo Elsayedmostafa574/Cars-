@@ -1,0 +1,48 @@
+.search-box{
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+.search-box input{
+    width: 100%;
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+}
+.search-box .btn{
+    padding: 10px 30px;
+    background-color: #1572D3;
+    color: #fff;
+}
+.popular{
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 18%;
+    margin: auto;
+    color: #1572D3;
+    background-color: #1571d325;
+}
+.card{
+    border: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card .card-body .fa-star{
+    color: #EFBF14 ;
+}
+.card .btn{
+    background-color: #1572D3;
+    color: #fff;
+}
+.allVehicles{
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #777;
+}
+@media (max-width: 676px) {
+    .popular{
+        width: auto;
+    }
+}

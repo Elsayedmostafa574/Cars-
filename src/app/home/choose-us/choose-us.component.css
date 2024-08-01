@@ -1,0 +1,49 @@
+.chooseUs{
+    display: flex;
+    align-items: center;
+    
+}
+.chooseUs .image{
+    width: 50%;
+    position: relative;
+
+}
+.image img{
+    width: 100%;
+    position: absolute;
+    left: -25%;
+}
+.popular{
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: fit-content;
+    color: #1572D3;
+    background-color: #1571d325;
+}
+.card{
+    border: none;
+}
+
+.card .icons{
+    width: fit-content;
+    padding: 30px;
+    background-color: #1571d325;
+    color: #1572D3;
+    border-radius: 20px;
+    text-align: center;
+}
+.card .icons .myIcon{
+    font-size: 30px;
+}
+
+
+
+
+@media (max-width: 676px) {
+    .popular{
+        width: auto;
+    }
+    .image{
+        display: none;
+    }
+}

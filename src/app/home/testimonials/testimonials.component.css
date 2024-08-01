@@ -1,0 +1,25 @@
+.popular{
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: fit-content;
+    color: #1572D3;
+    background-color: #1571d325;
+}
+.card{
+    height: 360px;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.card img{
+    width: 100%;
+}
+.card .stars{
+    color: #EFBF14;
+    margin: 20px auto;
+}
+@media (max-width: 676px) {
+    .popular{
+        width: auto;
+    }
+}

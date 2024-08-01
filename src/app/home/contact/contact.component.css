@@ -1,0 +1,32 @@
+input{
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #1571d325;
+}
+::placeholder{
+    color: #000;
+}
+.btn{
+    margin: auto !important;
+    text-align: center;
+    padding: 10px 50px;
+    background-color: #1572D3;
+    color: #fff;
+}
+.image{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+.image img{
+    width: 93%;
+    position: absolute;
+    left: 50%;
+    bottom: -90%;
+    transform: translateX(-50%);
+}
+.image .contactOut{
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+.popular{
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 18%;
+    margin: auto;
+    color: #1572D3;
+    background-color: #1571d325;
+}
+.card{
+    border: none;
+}
+.card .icon{
+    margin: auto;
+    font-size: 50px;
+    padding: 40px 50px;
+    color: #1572D3;
+    background-color: #1571d325;
+    border-radius: 20px;
+}
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.brands img{
+    width: 100px;
+    margin: auto 20px;
+}
+
+@media (max-width: 676px) {
+    .popular{
+        width: auto;
+    }
+}
