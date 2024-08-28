@@ -9,6 +9,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,14 @@ import { RouterModule } from '@angular/router';
     ChooseUsComponent,
     TestimonialsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
     CarouselModule,
-    RouterModule
-  ]
+    RouterModule,
+    FormsModule,
+]
 })
 export class HomeModule { }

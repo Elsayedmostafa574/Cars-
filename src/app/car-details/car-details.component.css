@@ -1,0 +1,31 @@
+.image{
+    position: relative;
+
+}
+.image img{
+    width: 100%;
+    position: absolute;
+    left: -25%;
+    top: 25%;
+}
+.popular{
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: fit-content;
+    color: #1572D3;
+    background-color: #1571d325;
+}
+table tbody td,
+table tbody th{
+    color: #959595;
+    ;
+}
+
+@media (max-width: 676px) {
+    .popular{
+        width: auto;
+    }
+    .image{
+        display: none;
+    }
+}

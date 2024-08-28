@@ -14,4 +14,7 @@ export class CarsService {
   getAllCars() : Observable<any>{
     return this.http.get<any>('https://freetestapi.com/api/v1/cars')
   }
+  getCarById(id:string) : Observable<any>{
+    return this.http.get<any>(`https://freetestapi.com/api/v1/cars/${id}`)
+  }
 }

@@ -32,4 +32,7 @@
     .popular{
         width: auto;
     }
+    .brands{
+        display: none;
+    }
 }

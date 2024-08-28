@@ -7,6 +7,7 @@ import { ChooseUsComponent } from './home/choose-us/choose-us.component';
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { ContactComponent } from './home/contact/contact.component';
 import { CarsComponent } from './cars/cars.component';
+import { CarDetailsComponent } from './car-details/car-details.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,9 @@ const routes: Routes = [
   },
   {
     path: 'allCars' , component: CarsComponent
+  },
+  {
+    path : 'carDetails/:id' , component : CarDetailsComponent
   }
 ];
 

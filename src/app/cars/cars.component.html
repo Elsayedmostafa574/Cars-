@@ -23,7 +23,7 @@
                         <p>Price</p>
                         <p class="fw-bold">$ {{car.price}} <span style="color: #777;">/day</span></p>
                       </div>
-                      <a href="#" class="btn text-capitalize w-100">rent now</a>
+                      <a [routerLink]="'/carDetails/'+car.id" class="btn text-capitalize w-100">rent now</a>
                     </div>
                   </div>
             </div>

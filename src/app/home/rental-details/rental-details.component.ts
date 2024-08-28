@@ -1,6 +1,7 @@
 import { Component , OnInit } from '@angular/core';
 import { CarsService } from 'src/app/services/cars.service';
 import { Cars } from '../cars';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-rental-details',
@@ -9,9 +10,13 @@ import { Cars } from '../cars';
 })
 export class RentalDetailsComponent implements OnInit {
   fourCars: Cars[] = [];
-  constructor(private service:CarsService){}
+  id = '';
+  constructor(private service:CarsService , private route : ActivatedRoute){}
 
   ngOnInit(): void {
+    this.route.params.subscribe((param:any)=>{
+      this.id = param.id;
+    })
     this.service.getFourCars().subscribe({
       next : (res)=>{
         this.fourCars = res;
